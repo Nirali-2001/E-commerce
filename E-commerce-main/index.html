@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <title>Document</title>
+    <style>
+        * {
+            /* margin: 0; */
+            /* padding: 0; */
+            box-sizing: border-box;
+        }
+
+        nav {
+            background-color: blueviolet;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* border: 1px solid red; */
+
+
+        }
+
+        nav ul {
+            list-style-type: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            /* border: 1px solid green; */
+        }
+
+        nav ul li {
+            padding: 10px 20px;
+            color: whitesmoke;
+            font-size: 20px;
+            background-color: steelblue;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 10px 20px;
+            color: whitesmoke;
+            font-size: 20px;
+            background-color: steelblue;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover{
+            background-color: powderblue;
+            color: black;
+            transition: 2s;
+
+        }
+
+        .banner {
+            /* border: 2px solid red; */
+            background-color: darkgray;
+            text-align: center;
+            height: 250px;
+            padding: 10px;
+        }
+
+        .sub_header {
+            /* border: 2px solid green; */
+            text-align: center;
+
+        }
+
+        .banner span {
+            color: red;
+        }
+
+        .container {
+            /* border: 2px solid yellow; */
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #card img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-top: 10px;
+        }
+
+        #card h2 {
+            text-align: center;
+        }
+
+        .second_banner {
+            /* background-color: blue; */
+            clear: both;
+            background-image: url(./Image/eCommerce-2.webp);
+            background-repeat: no-repeat;
+            height: 600px;
+            background-size: cover;
+            margin-top: 50px;
+            text-align: center;
+            padding: 200px;
+            margin-top: 50px;
+            border-radius: 5px;
+        }
+
+        .innder_div {
+            /* border: 2px solid red; */
+            background-color: whitesmoke;
+            padding: 60px;
+            height: 300px;
+            border-radius: 5px;
+        }
+
+        .second_container {
+            /* border: 2px solid lawngreen; */
+        }
+
+        #icons {
+            border: 1px solid gray;
+            border-radius: 10px;
+            margin-top: 10px;
+            box-shadow: 0px 0px 5px 2px gray;
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        #icons img {
+            width: 50%;
+            margin-top: 10px;
+        }
+
+        #box {
+            display: flex;
+            justify-content: space-evenly;
+        }
+
+        #icons h2 {
+            text-align: center;
+        }
+
+        #icons p {
+            text-align: center;
+
+        }
+
+        .footer {
+            /* border: 2px solid lightsalmon; */
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .footer .shopping img {
+            /* border: 2px solid purple; */
+            align-items: center;
+            margin-top: 50px;
+        }
+
+        ul li:hover {
+            background-color: palevioletred;
+            transition: 1s;
+        }
+
+        a {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!-- Unorderd List -->
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Pages</a></li>
+                <li> <a href="#">Shop</a></li>
+                <li> <a href="#">Eliments</a></li>
+                <li> <a href="#">Blog</a></li>
+                <li> <a href="#">Contact</a></li>
+            </ul>
+
+            <div>
+                <button>Sign In</button>
+                <button>Sign Out</button>
+            </div>
+
+        </nav>
+    </header>
+    <!-- start banner -->
+    <div class="banner">
+        <h1>Up To <span>50%</span> Discount</h1>
+        <h2>Summer Lookbook - 2024</h2>
+        <p>New Modern Stylist Fashionable Men's Wear Jeans Shirt.</p>
+        <button>Explore Now</button>
+    </div>
+    <!-- End banner -->
+
+    <!-- start sub_hrader -->
+    <div class="sub_header">
+        <h2>Top Category</h2>
+        <p>Follow the most popular trends and get exclusive items from castro shop</p>
+        <img src="./Image/icons/arrow-left-from-line.png" alt="" width="50px">
+    </div>
+    <!-- End sub_header -->
+
+    <!-- start container -->
+    <div class="container">
+        <div id="card">
+            <img src="./Image/MenWear.webp" alt="">
+            <h2>Gents Collection</h2>
+        </div>
+        <div id="card">
+            <img src="./Image/kidwear.webp" alt="">
+            <h2>Kids Collection</h2>
+        </div>
+        <div id="card">
+            <img src="./Image/FootWear.webp" alt="">
+            <h2>Footwear Collection</h2>
+        </div>
+        <div id="card">
+            <img src="./Image/WomenWear.webp" alt="">
+            <h2>Women Collection</h2>
+        </div>
+    </div>
+    <!-- End container -->
+
+    <!-- start second_banner -->
+    <div class="second_banner">
+        <div class="innder_div">
+            <h2>End of Season Clearance Sale <br>Upto 50%</h2>
+            <p>Welcome to the new range of shaving products from master barber. we have over three decades of experiance
+                in the male grooming industry</p>
+            <button>Shop Now</button>
+        </div>
+    </div>
+    <!-- End second_banner -->
+
+    <!-- start second_container -->
+    <div class="second_container">
+        <div id="box">
+            <div id="icons">
+                <img src="./Image/icons/delivery-truck.png" alt="">
+                <h2>Free Shipping</h2>
+                <p>Free Shipping on order <br>over $100 </p>
+
+            </div>
+            <div id="icons">
+                <img src="./Image/icons/credit-card.png" alt="">
+                <h2>Secure Payment</h2>
+                <p>We ensure secure <br>payment with PEV</p>
+
+            </div>
+            <div id="icons">
+                <img src="./Image/icons/phone.png" alt="">
+                <h2>Support 24 hours</h2>
+                <p>Contact us 24 hours a <br> day.7 days a week</p>
+            </div>
+            <div id="icons">
+                <img src="./Image/icons/return.png" alt="">
+                <h2>Returns</h2>
+                <p>Simply return it within 30 <br> days for and exchange.</p>
+            </div>
+
+        </div>
+    </div>
+    <!-- End second_container -->
+
+    <!-- start footer -->
+    <div class="footer">
+        <div class="shopping">
+            <img src="./Image/icons/shopping.png" alt="">
+        </div>
+
+        <div class="shopping">
+            <ul>
+                <h1>Category</h1>
+                <li>Men</li>
+                <li>Women</li>
+                <li>Kids</li>
+                <li>Accessories</li>
+                <li>Shoe</li>
+            </ul>
+        </div>
+        <div class="shopping">
+            <ul>
+                <h1>Usefull Links</h1>
+                <li>News & Tips</li>
+                <li>About Us</li>
+                <li>Terms and Conditions</li>
+                <li>Our Shop</li>
+                <li>Contact Us</li>
+            </ul>
+        </div>
+        <div class="shopping">
+            <ul>
+                <h1>Contact</h1>
+                <p>470B Ruecker Wall, <br>Kassandratwon,Hl <br>+(23212)2312323 <br>shop@gmail.com</p>
+                <img src="./Image/icons/facebook-app-symbol.png" alt="">
+                <img src="./Image/icons/twitter.png" alt="">
+                <img src="./Image/icons/google-plus.png" alt="">
+            </ul>
+        </div>
+        <div class="shopping">
+            <ul>
+                <h1>Newsletter</h1>
+                <p>470B Ruecker Wall,Kassandratwon, <br>Hl 975544</p>
+                <input type="text">
+                <button>Subscribe</button>
+            </ul>
+
+        </div>
+
+    </div>
+    <!-- End footer -->
+
+</body>
+
+</html>
